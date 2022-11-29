@@ -3,6 +3,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: sre-java
+  namespace: argocd-test
   labels:
     app: sre-java
 spec:
@@ -43,6 +44,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: sre-java-svc-monitoring
+  namespace: argocd-test
 spec:
   ports:
     - name: 9080-metrics
@@ -56,6 +58,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: test
+  namespace: argocd-test
 spec:
   to:
     kind: Service
