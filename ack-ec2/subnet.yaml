@@ -9,9 +9,6 @@ spec:
   vpcRef:
     from:
       name: tutorial-vpc
-  routeTableRefs:
-  - from:
-      name: tutorial-public-route-table
   tags:
   - key: env
     value: ack-test
