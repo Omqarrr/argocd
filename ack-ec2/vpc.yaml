@@ -10,4 +10,4 @@ spec:
   enableDNSHostnames: true
   tags:
     - key: Name
-      value: ack-test
+      value: ack-test1
