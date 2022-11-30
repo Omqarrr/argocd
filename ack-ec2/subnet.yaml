@@ -15,3 +15,5 @@ spec:
   tags:
   - key: env
     value: ack-test
+    key: Name
+    value: ack-subnet
