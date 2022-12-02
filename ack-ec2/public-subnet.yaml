@@ -1,0 +1,14 @@
+apiVersion: ec2.services.k8s.aws/v1alpha1
+kind: Subnet
+metadata:
+  name: ack-public-subnet
+spec:
+  availabilityZone: us-east-1a
+  cidrBlock: 10.0.0.0/20
+  mapPublicIPOnLaunch: true
+  vpcRef:
+    from:
+      name: ack-vpc
+  tags:
+  - key: Name
+    value: ack-public-subnet
