@@ -54,7 +54,7 @@ spec:
   selector:
     app: sre-java
 ---
-kind: Route
+kind: Route #route type
 apiVersion: route.openshift.io/v1
 metadata:
   name: test
