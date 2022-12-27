@@ -30,3 +30,4 @@ jobs:
 
       - name: Test k8s file
         run: datree test deployment/deployment.yaml --no-record --ignore-missing-schemas
+        continue-on-error: false
