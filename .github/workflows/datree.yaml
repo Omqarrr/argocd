@@ -51,7 +51,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-#           branch: feature
+          branch: main
           delete-branch: false
           title: '[Example] Added feature - ${{ github.sha }}'
           body: |
