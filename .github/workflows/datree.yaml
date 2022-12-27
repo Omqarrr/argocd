@@ -50,4 +50,4 @@ jobs:
           destination_branch: "main"
           github_token: ${{ secrets.GHUB_TOKEN }}
           pr_label: "feature, automated pr"
-#           pr_title: "[Example] Simple demo - ${GITHUB_SHA}"
+          pr_title: "[Example] Simple demo - ${{ github.sha }}"
