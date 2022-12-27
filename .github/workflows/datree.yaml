@@ -40,10 +40,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+        
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GHUB_TOKEN }}
           pr_label: "feature, automated pr"
           pr_title: "[Example] Simple demo"
