@@ -36,6 +36,8 @@ jobs:
         continue-on-error: false
 
   create-pull-request:
+    needs: build
+    
     runs-on: ubuntu-latest
     
     steps:
