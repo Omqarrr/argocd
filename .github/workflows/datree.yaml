@@ -37,6 +37,7 @@ jobs:
         
     
   createPullRequest:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -50,7 +51,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: feature*
+#           branch: feature
           delete-branch: false
           title: '[Example] Added feature - ${{ github.sha }}'
           body: |
